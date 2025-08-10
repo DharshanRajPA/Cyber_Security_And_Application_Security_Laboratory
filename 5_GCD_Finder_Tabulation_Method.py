@@ -37,21 +37,5 @@ def find_gcd_tabulation():
     except ValueError:
         print("Please enter valid integers")
 
-def main():
-    while True:
-        print("\n=== GCD FINDER (Tabulation Method) ===")
-        print("1. Find GCD of two numbers")
-        print("2. Exit")
-        
-        choice = input("Enter choice (1 or 2): ")
-        
-        if choice == '1':
-            find_gcd_tabulation()
-        elif choice == '2':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1 or 2.")
-
 if __name__ == "__main__":
-    main()
+    find_gcd_tabulation()

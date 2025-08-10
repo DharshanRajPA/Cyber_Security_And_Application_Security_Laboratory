@@ -61,21 +61,5 @@ def test_miller_rabin():
     except ValueError:
         print("Please enter a valid integer")
 
-def main():
-    while True:
-        print("\n=== MILLER-RABIN PRIMALITY TEST ===")
-        print("1. Test if number is prime")
-        print("2. Exit")
-        
-        choice = input("Enter choice (1 or 2): ")
-        
-        if choice == '1':
-            test_miller_rabin()
-        elif choice == '2':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1 or 2.")
-
 if __name__ == "__main__":
-    main()
+    test_miller_rabin()

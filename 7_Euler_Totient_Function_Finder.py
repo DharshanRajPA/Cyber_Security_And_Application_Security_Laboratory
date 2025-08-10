@@ -39,21 +39,5 @@ def find_euler_totient():
     except ValueError:
         print("Please enter a valid integer")
 
-def main():
-    while True:
-        print("\n=== EULER'S TOTIENT FUNCTION (ETH) ===")
-        print("1. Calculate Euler's Totient Function")
-        print("2. Exit")
-        
-        choice = input("Enter choice (1 or 2): ")
-        
-        if choice == '1':
-            find_euler_totient()
-        elif choice == '2':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1 or 2.")
-
 if __name__ == "__main__":
-    main() 
+    find_euler_totient() 

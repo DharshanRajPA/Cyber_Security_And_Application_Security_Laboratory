@@ -100,24 +100,5 @@ def find_modular_inverse():
     except ValueError:
         print("Please enter valid integers")
 
-def main():
-    while True:
-        print("\n=== FERMAT'S LITTLE THEOREM ===")
-        print("1. Test Fermat's Little Theorem")
-        print("2. Find modular inverse using Fermat")
-        print("3. Exit")
-        
-        choice = input("Enter choice (1, 2, or 3): ")
-        
-        if choice == '1':
-            test_fermat()
-        elif choice == '2':
-            find_modular_inverse()
-        elif choice == '3':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
-
 if __name__ == "__main__":
-    main()
+    test_fermat()

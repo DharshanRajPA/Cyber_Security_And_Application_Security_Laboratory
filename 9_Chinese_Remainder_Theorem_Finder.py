@@ -83,21 +83,5 @@ def solve_crt():
     except ValueError:
         print("Please enter valid integers")
 
-def main():
-    while True:
-        print("\n=== CHINESE REMAINDER THEOREM ===")
-        print("1. Solve system of congruences")
-        print("2. Exit")
-        
-        choice = input("Enter choice (1 or 2): ")
-        
-        if choice == '1':
-            solve_crt()
-        elif choice == '2':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1 or 2.")
-
 if __name__ == "__main__":
-    main()
+    solve_crt()

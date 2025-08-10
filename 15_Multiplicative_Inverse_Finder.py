@@ -161,24 +161,5 @@ def test_inverse_calculation():
     except ValueError:
         print("Please enter valid integers")
 
-def main():
-    while True:
-        print("\n=== MULTIPLICATIVE INVERSE FINDER ===")
-        print("1. Find multiplicative inverse")
-        print("2. Test inverse calculation")
-        print("3. Exit")
-        
-        choice = input("Enter choice (1, 2, or 3): ")
-        
-        if choice == '1':
-            find_multiplicative_inverse()
-        elif choice == '2':
-            test_inverse_calculation()
-        elif choice == '3':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
-
 if __name__ == "__main__":
-    main()
+    find_multiplicative_inverse() 

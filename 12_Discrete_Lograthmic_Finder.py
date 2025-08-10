@@ -160,24 +160,5 @@ def test_discrete_log():
     except ValueError:
         print("Please enter valid integers")
 
-def main():
-    while True:
-        print("\n=== DISCRETE LOGARITHM FINDER ===")
-        print("1. Find discrete logarithm")
-        print("2. Test discrete logarithm calculation")
-        print("3. Exit")
-        
-        choice = input("Enter choice (1, 2, or 3): ")
-        
-        if choice == '1':
-            find_discrete_logarithm()
-        elif choice == '2':
-            test_discrete_log()
-        elif choice == '3':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
-
 if __name__ == "__main__":
-    main()
+    find_discrete_logarithm()

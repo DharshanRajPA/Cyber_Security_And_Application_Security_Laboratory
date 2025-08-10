@@ -113,30 +113,5 @@ def frequency_analysis():
     except Exception as e:
         print(f"Error: {e}")
 
-def main():
-    while True:
-        print("\n=== CAESAR CIPHER CRYPTOGRAPHY ===")
-        print("1. Encrypt a message")
-        print("2. Decrypt a message")
-        print("3. Brute force decryption")
-        print("4. Frequency analysis")
-        print("5. Exit")
-        
-        choice = input("Enter choice (1-5): ")
-        
-        if choice == '1':
-            encrypt_message()
-        elif choice == '2':
-            decrypt_message()
-        elif choice == '3':
-            brute_force_decrypt()
-        elif choice == '4':
-            frequency_analysis()
-        elif choice == '5':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1-5.")
-
 if __name__ == "__main__":
-    main()
+    encrypt_message()

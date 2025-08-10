@@ -135,24 +135,5 @@ def test_primitive_root():
     except ValueError:
         print("Please enter valid integers")
 
-def main():
-    while True:
-        print("\n=== PRIMITIVE ROOT FINDER ===")
-        print("1. Find all primitive roots")
-        print("2. Test if a number is a primitive root")
-        print("3. Exit")
-        
-        choice = input("Enter choice (1, 2, or 3): ")
-        
-        if choice == '1':
-            find_primitive_root()
-        elif choice == '2':
-            test_primitive_root()
-        elif choice == '3':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
-
 if __name__ == "__main__":
-    main()
+    find_primitive_root()
