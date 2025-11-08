@@ -14,6 +14,7 @@ def mod_inverse(a, m):
         return None
     return (x % m + m) % m
 
+
 def chinese_remainder_theorem(remainders, moduli):
     if len(remainders) != len(moduli):
         return None
